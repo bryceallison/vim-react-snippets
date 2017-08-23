@@ -62,11 +62,10 @@ endsnippet
 snippet rfc "React Functional Component" b
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './${2:$1}.css';
 
-function ${1:`!v expand('%:t:r')`}(${3:{...props}}) {
+const ${1:`!v expand('%:t:r')`} = (${3:{...props}}) => {
 	return (
-		<div className={styles.base}>
+		<div>
 			$4
 		</div>
 	);
